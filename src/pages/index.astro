@@ -1,7 +1,7 @@
 ---
 import Hero from '@components/hero.astro';
 import Slider from '@components/slider.astro';
-import Aside from '@components/aside.astro';
+import Aside from '@components/about.astro';
 import Experience from '@components/experience.astro';
 import Card from '@components/card.astro';
 import Container from '@components/cardcontainer.astro';
@@ -14,8 +14,10 @@ import '../styles/global.css';
 	<Hero />
 	<div id="void" class="h-20"></div>
 	<section class="flex gap-8 p-4 scroll-mt-20" id="about">
+		<Aside 
+		Icons={["/icon/github_dark.svg", "/icon/linkedin.svg", "/icon/pdf.svg"]}
+		/>
 		<Slider />
-		<Aside />
 	</section>
 	<Experience />
 	<Container>
@@ -33,6 +35,7 @@ import '../styles/global.css';
 		description="My first public project in the internet"
 		name="Saber más"
 		url="https://rp0039.neocities.org/"
+		lenguajes={["/icon/html5.svg", "/icon/css_old.svg", "/icon/javascript.svg"]}
 		/>
 		<Card 
 		title="My Personal Webpage:"
@@ -40,6 +43,7 @@ import '../styles/global.css';
 		description="My first public project in the internet"
 		name="Saber más"
 		url="https://rp0039.neocities.org/"
+		lenguajes={["/icon/html5.svg", "/icon/css_old.svg", "/icon/javascript.svg"]}
 		/>
 	</Container>
 </Layout>
