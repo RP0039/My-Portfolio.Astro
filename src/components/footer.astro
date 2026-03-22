@@ -1,0 +1,76 @@
+---
+
+---
+
+<footer class="flex flex-col">
+    <section class="relative">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </section>
+    <section class="grid grid-cols-3 w-full py-8 font-medium" id="footer">
+        <article class="flex flex-col jusitify-center pl-3">
+            <h1>Contact</h1>
+            <p>Gildo City AvenidaSiempreViVa</p>
+        </article>
+        <article class="flex flex-col jusitify-center items-center">
+            <div>
+                <h1 class="text-2xl font-bold">Social</h1>
+            </div>
+            <div class="text-3xl">
+                <a href="">
+                    <i class="fa-brands fa-linkedin" ></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </article>
+        <article class="flex flex-col jusitify-center items-center">
+            <div>
+                <h2>Copyright © 2026</h2>
+            </div>
+        </article>
+    </section>
+</footer>
+
+<style>
+    #footer { 
+        background-color:white;
+    }
+    .wave {
+        position:absolute;
+        bottom:0; left:0;
+        background-image: url(/assets/wave.webp);
+        background-size: 1000px 160px;
+        height:160px;
+        width:100%;
+        z-index:-999;
+    }
+    .wave1{ 
+        opacity:1;
+        animation-delay: -3s;
+        animation: wave 17s ease-in-out infinite;
+    }
+    .wave2{ 
+        opacity:0.5;
+        animation-delay: 5s;
+        animation: wave 12s ease-in-out infinite;
+    }
+    .wave3{ 
+        opacity:0.7;
+        animation-delay: -2s;
+        animation: wave 10s linear infinite reverse;
+    }
+    @keyframes wave {
+        0% {
+            background-position: 0;
+        }
+        100% {
+            background-position: 1000px;
+        }
+    }
+</style>

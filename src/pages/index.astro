@@ -1,0 +1,27 @@
+---
+import Hero from '@components/hero.astro';
+import Slider from '@components/slider.astro';
+import Aside from '@components/aside.astro';
+import Experience from '@components/experience.astro';
+import Card from '@components/card.astro';
+import Container from '@components/cardcontainer.astro';
+import Layout from '@layouts/Layout.astro';
+
+import '../styles/global.css';
+---
+
+<Layout>
+	<Hero />
+	<div id="void" class="h-20 scroll-mt-20"></div>
+	<section id="about">
+		<Slider />
+		<Aside />
+	</section>
+	<Experience />
+	<Container>
+		<Card />
+		<Card />
+		<Card />
+	</Container>
+</Layout>
+
