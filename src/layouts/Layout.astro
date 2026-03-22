@@ -3,6 +3,7 @@ import Header from '@components/header.astro';
 import Footer from '@components/footer.astro';
 
 import '../styles/global.css';
+import '../styles/style.css';
 ---
 <!doctype html>
 <html lang="en">
@@ -18,6 +19,20 @@ import '../styles/global.css';
 	<body>
 		<Header />
 		<slot />
+		<div class="area" >
+					<ul class="circles">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+					</ul>
+			</div >
 		<Footer />
 	</body>
 </html>
@@ -33,7 +48,7 @@ import '../styles/global.css';
 		height: 100%;
 	}
 	body {
-		background: #17232e;
+		background: #01080f;
 	}
 	h1,h2,h3 {
 		font-family:funkturm;

@@ -6,9 +6,15 @@ const { Icons } = Astro.props;
     <div class="flex flex-col gap-5 items-center">
         <img src="/assets/Amy.jpg" alt="A photo of myself" class="w-45 rounded-4xl">
         <div class="flex justify-center gap-3">
-            {Icons && Icons.map((icon) => (
-                <img src={icon} alt="" class="size-8" />
-            ))}
+            <a href="" class="size-8">
+                <img src="/icon/linkedin.svg" alt="Hire me">
+            </a>
+            <a href="" class="size-8">
+                <img src="/icon/github_dark.svg" alt="See my projects">
+            </a>
+            <a href="" class="size-8">
+                <img src="/icon/pdf.svg" alt="Curriculum CV">
+            </a>
         </div>
         <p class="email">yourexample@email.com</p>
     </div>
@@ -35,6 +41,6 @@ const { Icons } = Astro.props;
         transition:all 1s;
     }
     .email:hover {
-        scale:1.1;
+        scale:1.03;
     }
 </style>
