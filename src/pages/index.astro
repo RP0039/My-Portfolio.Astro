@@ -12,16 +12,35 @@ import '../styles/global.css';
 
 <Layout>
 	<Hero />
-	<div id="void" class="h-20 scroll-mt-20"></div>
-	<section id="about">
+	<div id="void" class="h-20"></div>
+	<section class="flex gap-8 p-4 scroll-mt-20" id="about">
 		<Slider />
 		<Aside />
 	</section>
 	<Experience />
 	<Container>
-		<Card />
-		<Card />
-		<Card />
+		<Card 
+		title="My Personal Webpage:"
+		image="/assets/mywebpage1.png"
+		description="My first public project in the internet"
+		name="Saber más"
+		url="https://rp0039.neocities.org/"
+		lenguajes={["/icon/html5.svg", "/icon/css_old.svg", "/icon/javascript.svg"]}
+		/>
+		<Card 
+		title="My Personal Webpage:"
+		image="/assets/mywebpage1.png"
+		description="My first public project in the internet"
+		name="Saber más"
+		url="https://rp0039.neocities.org/"
+		/>
+		<Card 
+		title="My Personal Webpage:"
+		image="/assets/mywebpage1.png"
+		description="My first public project in the internet"
+		name="Saber más"
+		url="https://rp0039.neocities.org/"
+		/>
 	</Container>
 </Layout>
 
