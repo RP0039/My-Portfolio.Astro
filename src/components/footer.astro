@@ -8,36 +8,45 @@
         <div class="wave wave2"></div>
         <div class="wave wave3"></div>
     </section>
-    <section class="grid grid-cols-3 w-full py-4 font-medium" id="footer">
-        <article class="flex flex-col jusitify-center pl-3">
-            <h1>Contact</h1>
-            <p>Gildo City AvenidaSiempreViVa</p>
+    <section class="grid grid-col-1 grid-rows-2 w-full py-4 font-medium" id="footer">
+        <article>
+            <div class="pb-3 flex justify-center items-end border-b-2 border-b-black">
+                <h1 class="text-5xl font-extrabold">Contacto</h1>
+            </div>
+    
+            <div class="pt-5 mb-15 flex justify-center items-start">
+                <h1 class="text-3xl font-medium">Te intereso mi Portfolio? Te invito a Contactarme.</h1>
+            </div>
         </article>
-        <article class="flex flex-col jusitify-center items-center">
+        <div class="flex flex-col items-center gap-6">
+            <article class="flex gap-4 text-3xl text-white">
+                    <a href="">
+                        <i class="fa-brands fa-linkedin" ></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+            </article>
             <div>
-                <h1 class="text-2xl font-bold">Social</h1>
+                <p>riveroval3984@gmail.com</p>
+                <h2>©2026 Copyright: Valentino Rivero  </h2>
             </div>
-            <div class="text-3xl">
-                <a href="">
-                    <i class="fa-brands fa-linkedin" ></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-        </article>
-        <article class="flex flex-col jusitify-center items-center">
-            <div>
-                <h2>Copyright © 2026</h2>
-            </div>
-        </article>
+        </div>
     </section>
 </footer>
 
 <style>
+    article a {
+        background:#111;
+        padding: 10px 16px;
+        transition: all 0.3s ease;
+    }
+    article a:hover {
+        scale:1.2;
+    }
     #footer { 
         background-color:white;
     }
