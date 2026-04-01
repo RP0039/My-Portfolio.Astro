@@ -1,11 +1,23 @@
 ---
 
 ---
-<section class="flex flex-wrap justify-evenly p-6 gap-10 my-8 mx-4 scroll-mt-20" id="projects">
+<main class="m-8" id="projects">
+	<h1 class="mx-7 mt-6 text-4xl font-extrabold text-emerald-400">
+		<i class="fa-solid fa-terminal"></i> Mis Proyectos
+	</h1>
+<section class="p-6 gap-13 scroll-mt-20">
     <slot />
 </section> 
+</main>
+
 
 <style>
+	section {
+		display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+		grid-auto-rows: auto;
+        align-items:start;
+	}
 	#projects {
 		background: rgba(33, 51, 41, 0.219);
 		background-attachment: blur(1em);
