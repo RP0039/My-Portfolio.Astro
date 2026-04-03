@@ -1,0 +1,10 @@
+---
+const { title, date, description } = Astro.props;
+---
+
+<main class="flex flex-col p-6 prose">
+    <h2 class="text-3xl font-bold">{title}</h2>
+    <p class="pl-2 text-sm text-gray-400">{date}</p>
+    <p style="white-space: pre-line;" class="pt-3 max-w-2xl text-balance text-lg text-blue-400 font-medium">
+       {description}  
+    </p>

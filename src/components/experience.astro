@@ -1,21 +1,70 @@
 ---
-
+const { lenguajes, Softlenguajes }: { lenguajes?: string[]; Softlenguajes?: string[] } = Astro.props;
 ---
 
-<main class=" scroll-mt-20 mt-6 p4" id="experience">
+<main class="flex justify-between scroll-mt-20 mt-6 mx-8 p-8" id="experience">
     <section>
-        <div>Experience</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eveniet quaerat ad mollitia distinctio et natus exercitationem nobis. Adipisci, aliquam?</div>
+        <h1 class="pb-3 text-4xl font-extrabold text-emerald-400">
+            <i class="fa-solid fa-graduation-cap"></i> Mi Experiencia
+        </h1>
+        <slot />
     </section>
-    <section>
-        <div>Skills</div>
-        <div>
+    <section class="flex flex-col gap-3">
+        <h1 class="text-center text-2xl font-extrabold text-emerald-200">
+            Tecnologías
+        </h1>
+        <div class="h-full flex-col flex gap-11">
             <article>
-                
+                <p>Dominadas</p>
+                <div id="lenguajes">
+                {lenguajes && lenguajes.map((icon) => (
+                    <img src={icon} alt="icono de lenguaje" class="size-11" />
+                ))}
+                </div>
             </article>
             <article>
-
+                <p>En Aprendizaje</p>
+                <div id=lenguajes>
+                {Softlenguajes && Softlenguajes.map((icon) => (
+                    <img src={icon} alt="icono de lenguaje" class="size-11" />
+                ))}
+                </div>
             </article>
         </div>
     </section>
 </main>
+
+<style>
+    #experience {
+        background-color: rgba(29, 29, 29, 0.26);
+		background-attachment: blur(1em);
+		color: #fff;
+        border-radius: 20px;
+        border: 1.5px solid #fafafa10;
+        box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.63);
+    }
+    article {
+        height: 100%;
+        max-width:400px;
+        display:flex; flex-direction: column; gap: 1em;
+        padding:1em;
+        border-radius: 20px;    
+        border:1.5px solid #fafafa10;
+        background: rgba(17, 26, 34, 0.377);
+        background-attachment: blur(1em);
+        box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.63);
+    }
+    p {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #d4d4d4;
+    }
+    #lenguajes {
+        height: 100%;
+        display: flex; flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
