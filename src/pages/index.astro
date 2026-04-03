@@ -1,8 +1,8 @@
 ---
 import Hero from '@components/hero.astro';
-import Slider from '@components/slider.astro';
 import About from '@components/about.astro';
 import Experience from '@components/experience.astro';
+import ExperienceItem from '@components/experienceItem.astro';
 import Card from '@components/card.astro';
 import Container from '@components/cardcontainer.astro';
 import Layout from '@layouts/Layout.astro';
@@ -13,32 +13,37 @@ import '../styles/global.css';
 <Layout>
 	<Hero />
 	<div id="void" class="h-20"></div>
-	<section class="flex gap-8 mx-8 scroll-mt-20" id="about">
+	<section class="px-[7%] mx-8 scroll-mt-20" id="about">
 		<About />
-		<Slider />
 	</section>
-	<Experience />
+	<Experience
+	lenguajes={["/icon/html5.svg", "/icon/css_old.svg", "/icon/javascript.svg", "/icon/tailwindcss.svg", "/icon/github_dark.svg", "/icon/git.svg", "/icon/astro.svg"]}
+	Softlenguajes={["/icon/python.svg", "/icon/c.svg", "/icon/c-plusplus.svg", "/icon/typescript.svg", "/icon/nodejs.svg", "/icon/react_dark.svg"]}
+	>
+		<ExperienceItem 
+		title="Copa Robotica"
+		date="abril 2026 / presente"
+		description="Se trata de una competencia de robótica en la que los participantes diseñan, construyen y programan robots a nivel nacional."
+		/>
+		<ExperienceItem 
+		title="Curso de Logica y Aprendizaje"
+		date="diciembre 2025 - enero 2026"
+		description="Curso enfocado en generar Dominio en las habilidades en lenguajes como Html, Css, JavaScript. Además de habilidades blandas como trabajo en equipo, comunicación efectiva y resolución de problemas."
+		/>
+		<ExperienceItem 
+		title="Solve for Tomorrow"
+		date="agosto 2025 - noviembre 2025"
+		description="Un concurso organizado por Samsung que busca fomentar la creatividad y el pensamiento crítico entre los estudiantes de secundaria. El objetivo era el de proponer soluciones innovadoras a problemas sociales utilizando la tecnología.
+		
+		Trabajé en conjunto a un equipo de 4 personas y logramos destacar entre los participantes pasando a la ronda de jueces digitales."
+		/>
+	</Experience>
 	<Container>
 		<Card 
 		title="Mi Sitio Web personal:"
-		image="/assets/mywebpage1.png"
-		description="Mi primer proyecto público. Fue un proyecto de aprendizaje para mejorar mis habilidades básicas en HTML, CSS y JavaScript."
-		name="Saber más"
-		url="https://rp0039.neocities.org/"
-		lenguajes={["/icon/html5.svg", "/icon/css_old.svg", "/icon/javascript.svg"]}
-		/>
-		<Card 
-		title="Mi Sitio Web personal:"
-		image="/assets/mywebpage1.png"
-		description="Mi primer proyecto público. Fue un proyecto de aprendizaje para mejorar mis habilidades básicas en HTML, CSS y JavaScript."
-		name="Saber más"
-		url="https://rp0039.neocities.org/"
-		lenguajes={["/icon/html5.svg", "/icon/css_old.svg", "/icon/javascript.svg"]}
-		/>
-		<Card 
-		title="Mi Sitio Web personal:"
-		image="/assets/mywebpage1.png"
-		description="Mi primer proyecto público. Fue un proyecto de aprendizaje para mejorar mis habilidades básicas en HTML, CSS y JavaScript."
+		image="/assets/mywebpage1.webp"
+		description="Sitio web personal desarrollado con HTML, CSS y JavaScript.
+		 Enfocado en diseño responsive, estructura clara y buenas prácticas de desarrollo front-end."
 		name="Saber más"
 		url="https://rp0039.neocities.org/"
 		lenguajes={["/icon/html5.svg", "/icon/css_old.svg", "/icon/javascript.svg"]}
