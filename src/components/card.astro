@@ -1,5 +1,14 @@
 ---
-const { title, image, description, url, name, lenguajes } = Astro.props;
+interface Props {
+  title: string;
+  image: string;
+  description: string;
+  url: string;
+  name: string;
+  lenguajes?: string[];
+}
+
+const { title, image, description, url, name, lenguajes }: Props = Astro.props;
 ---
 
 <main class="max-w-100 flex flex-col gap-3 p-6 prose">
