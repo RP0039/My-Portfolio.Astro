@@ -1,13 +1,14 @@
 # My Personal Portfolio
 A clean and fast personal portfolio built with Astro that showcases my projects and web development work, combining a lightning-fast static layout with a few interactive touches where needed.
 
-> [!NOTE] 🔺
+> [!NOTE]
 > I don't currently have the page hosted; you can only view it if you create a local server.
 >
 > **Running the project**
 > 1.Clone the repository
 > 2.Install dependencies: ```npm install```
 > 3.Run a local server: ```npm run dev```
+>
 > 4.Open ```http://localhost:4321/``` in your browser
 
 ## Technologies 🌟
