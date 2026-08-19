@@ -5,6 +5,7 @@ A clean and fast personal portfolio built with Astro that showcases my projects 
 > I don't currently have the page hosted; you can only view it if you create a local server.
 >
 > **Running the project**
+> 
 > 1.Clone the repository
 > 
 > 2.Install dependencies: ```npm install```
