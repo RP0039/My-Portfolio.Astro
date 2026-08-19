@@ -1,7 +1,7 @@
 # My Personal Portfolio
 A clean and fast personal portfolio built with Astro that showcases my projects and web development work, combining a lightning-fast static layout with a few interactive touches where needed.
 
-> [!note] 🔺
+> [!NOTE] 🔺
 > I don't currently have the page hosted; you can only view it if you create a local server.
 >
 > **Running the project**
