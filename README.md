@@ -3,12 +3,12 @@ A clean and fast personal portfolio built with Astro that showcases my projects 
 
 > ![note] 🔺
 > I don't currently have the page hosted; you can only view it if you create a local server.
-> **Running the project**
 >
+> **Running the project**
 > 1.Clone the repository
-> 2.Install dependencies: toml```npm install```
-> 3.Run a local server: toml```npm run dev```
-> 4.Open toml```http://localhost:4321/``` in your browser
+> 2.Install dependencies: ```npm install```
+> 3.Run a local server: ```npm run dev```
+> 4.Open ```http://localhost:4321/``` in your browser
 
 ## Technologies 🌟
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -17,4 +17,3 @@ A clean and fast personal portfolio built with Astro that showcases my projects 
 ## Image preview
 <img src="https://files.catbox.moe/pde8wc.png">
 *outdated*
----
