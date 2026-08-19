@@ -12,7 +12,8 @@ A clean and fast personal portfolio built with Astro that showcases my projects 
 > 
 > 3.Run a local server: ```npm run dev```
 >
-> 4.Open ```http://localhost:4321/``` in your browser
+> 4.Open ```http://localhost:4321/``` in your browser.
+>
 > Anyway, I'm working on a second version of this portfolio since it's become obsolete and outdated.
 
 ## Technologies 🌟
