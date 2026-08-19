@@ -6,7 +6,9 @@ A clean and fast personal portfolio built with Astro that showcases my projects 
 >
 > **Running the project**
 > 1.Clone the repository
+> 
 > 2.Install dependencies: ```npm install```
+> 
 > 3.Run a local server: ```npm run dev```
 >
 > 4.Open ```http://localhost:4321/``` in your browser
